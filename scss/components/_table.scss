@@ -1,0 +1,27 @@
+/*  To be used with Data Tables https://datatables.net/ */
+
+
+input[type=search] {
+    border-radius: 25px;
+    border: #eee 2px solid;
+    -webkit-appearance: searchfield;
+    &:focus {
+      outline: none;
+    }
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border:$main-text 1px solid;
+  border-radius: 0px;
+  background: $white;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 0px;
+  &:hover{
+    background: $main-text;
+    border: none;
+  }
+}

@@ -1,0 +1,197 @@
+// ==============
+// Global imports
+// ==============
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+/*Include table styles or other if needed*/
+
+
+
+
+.svg-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+
+.logo {
+  z-index: 10000;
+}
+.text-body {
+  position: absolute;
+  z-index:100;
+}
+
+h1 {
+  margin-top: 2em;
+  margin-bottom: 0em;
+  margin-left: 120px;
+  @include text(5.5em, 1em, bold, $white);
+  @media #{$brk-tab} {
+    font-size: 4em;
+    margin-left: 30px;
+  }
+  @media #{$brk-narrow} {
+    font-size: 2.7em;
+    margin-left: 10px;
+  }
+
+}
+
+h3 {
+  position: relative;
+  margin-left: 120px;
+  font-size: 2.3em;
+  @media #{$brk-tab} {
+    font-size: 2em;
+    margin-left: 30px;
+  }
+  @media #{$brk-narrow} {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+}
+
+.intro {
+  @include text(1.6em, 1.5em, normal, $white);
+  width:70%;
+  margin-left: 120px;
+  @media #{$brk-tab} {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-left: 30px;
+  }
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}
+
+.intro-mobile {
+  display: none;
+  @media #{$brk-narrow} {
+    display: block;
+    white-space: normal;
+    @include text(1.1em, 1.3em, normal, $white);
+    width:70%;
+    margin-left: 10px;
+  }
+
+}
+
+.small-btn {
+  margin-top: 7em;
+  z-index:10000;
+  position: fixed;
+  cursor: pointer;
+}
+
+.small-btn-name {
+  float:right;
+  margin-right: 15px;
+  opacity: 0.7;
+  @include text(1.5em, 1.5em, normal, $main-text);
+  & span {
+    @include highlited(0.5em, $white, #F75757);
+  }
+  &:hover {
+    opacity: 1;
+  }
+  @media #{$brk-narrow} {
+    display: block;
+    white-space: normal;
+    @include text(1em, 1.2em, normal, $white);
+    margin-right: 1px;
+    margin-top: 3em;
+  }
+}
+
+.infrared {
+  margin-bottom: 1em;
+  display: none;
+}
+.natural {
+  margin-bottom: 1em;
+}
+
+.test {
+  display: block;
+  width: 70%;
+  float: right;
+  margin-top: 2em;
+}
+
+
+#before-after {
+display: none;
+position: relative;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.recs {
+  opacity: 0;
+}
+
+
+
+.desk {
+  @media #{$brk-narrow} {
+  display: none;
+  font-size: 1em;
+  }
+}
+
+.ba-view {
+  display: none;
+}
+
+#g-main-2015_svg-Artboard_1 .data-text {
+  @include text(1.5em, 0.5em, normal, $white);
+  @media #{$brk-tab} {
+   @include text(1.3em, 0.5em, normal, $white);
+  }
+  @media #{$brk-narrow} {
+   @include text(1.3em, 1.2em, normal, $white);
+  }
+}
+
+#g-main-2015_svg-Artboard_1 .add-info {
+  @include text(1.4em, 0.5em, normal, #eee);
+  font-style: italic;
+  @media #{$brk-tab} {
+   display:none;
+  }
+  & span {
+    @include highlited(0.1em, $white, #F98585);
+    opacity: 0.8;
+  }
+}
+
+#g-main-2015_svg-Artboard_1 .region-name {
+  @include text(1.1em, 0.5em, normal, $white);
+  font-style: italic;
+  opacity: 0.7;
+  @media #{$brk-narrow} {
+   display:none;
+  }
+}
+
+#g-main-2015_svg-Artboard_1 .geoname {
+  @include text(1.3em, 0.5em, normal, $white);
+  opacity: 0.6;
+  @media #{$brk-narrow} {
+   @include text(0.9em, 1.2em, normal, $white);
+   opacity: 0.4;
+  }
+}
