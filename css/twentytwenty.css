@@ -51,11 +51,11 @@
   border-radius: 2px; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
-  top: 50%;
+  top: 10%;
   margin-top: -19px; }
 
 .twentytwenty-vertical .twentytwenty-before-label:before, .twentytwenty-vertical .twentytwenty-after-label:before {
-  left: 50%;
+  left: 10%;
   margin-left: -45px;
   text-align: center;
   width: 90px; }
