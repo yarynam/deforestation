@@ -340,7 +340,7 @@ h3 {
   margin-bottom: 1em; }
 
 .test {
-  display: block;
+  display: fixed;
   width: 70%;
   float: right;
   margin-top: 2em; }
