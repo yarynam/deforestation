@@ -111,7 +111,7 @@ h3 {
     white-space: normal;
     @include text(1em, 1.2em, normal, $white);
     margin-right: 1px;
-    margin-top: 3em;
+    margin-top: 1em;
   }
 }
 
@@ -130,6 +130,11 @@ h3 {
   margin-top: 2em;
 }
 
+.compass {
+  @media #{$brk-narrow} {
+   display: none;
+  }
+}
 
 #before-after {
 display: none;
@@ -193,5 +198,12 @@ overflow: hidden;
   @media #{$brk-narrow} {
    @include text(0.9em, 1.2em, normal, $white);
    opacity: 0.4;
+  }
+}
+
+.methods {
+  @include text(3em, 1.2em, normal, $white);
+  @media #{$brk-narrow} {
+   display: none;
   }
 }

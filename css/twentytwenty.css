@@ -102,12 +102,12 @@
 .twentytwenty-before-label {
   opacity: 0; }
   .twentytwenty-before-label:before {
-    content: "2000"; }
+    content: "22.08.2000"; }
 
 .twentytwenty-after-label {
   opacity: 0; }
   .twentytwenty-after-label:before {
-    content: "2015"; }
+    content: "05.06.2015"; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before {
   left: 10px; }
