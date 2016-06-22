@@ -365,6 +365,9 @@ h3 {
       margin-right: 1px;
       margin-top: 1em; } }
 
+.back {
+  margin-left: 20em; }
+
 .infrared {
   margin-bottom: 1em;
   display: none; }

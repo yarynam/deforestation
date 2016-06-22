@@ -73,7 +73,7 @@
       <div class="small-btn-name natural"><span>Природній колір</span></div >
       <div class="small-btn-name infrared"><span>Свіжі вирубки</span></div >
       <div  class="small-btn-name area-view"><span>Порівняти з 2000 роком</span></div>
-      <div  class="small-btn-name ba-view"><span>Показати площу вирубок</span></div>
+      <div  class="small-btn-name ba-view back"><span>Назад</span></div>
     </div>
   </div>
   <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
@@ -152,7 +152,7 @@
 		<div id='g-simple-main-2015-2_svg-Artboard_1-graphic'>
 			<img id='g-ai0-0'
 				class='g-aiImg zoom'
-				src='main-soil.png' data-magnify-src="main-soil.png"
+				src='img/soil.jpg' data-magnify-src="img/soil-big.jpg"
 				/>
 			<div id='rec1' class='g-Layer_1 g-aiAbs recs' style='top:10.7666%;left:51.5376%;width:27.1888%;'>
 				<p class='data-text desk'>Загальна площа - <b>4 020 га</b></p>
@@ -448,6 +448,7 @@ $(".area-view").click(function() {
   $(".test").hide();
   $("h1").hide();
   $("h3").hide();
+  $(".credits").hide();
   if ($( window ).width() < 768 ) {
     $(".intro-ba-mobile").show();
   } else {
@@ -470,6 +471,7 @@ $(".ba-view").click(function() {
   $(".intro-ba-mobile").hide();
   $("h1").show();
   $("h3").show();
+  $(".credits").show();
   $(".area-view").show();
   $("#before-after").hide();
   $(".main-container").show();
@@ -478,7 +480,7 @@ $(".ba-view").click(function() {
   } else {
     $(".intro").show();
   }
-  if ($(".g-aiImg").attr( "src" ) == "main-soil.png" ) {
+  if ($(".g-aiImg").attr( "src" ) == "img/soil.jpg" ) {
     $(".natural").show();
   } else {
     $(".infrared").show();
@@ -488,14 +490,14 @@ $(".ba-view").click(function() {
 $(".natural").click(function(){
   $(this).hide();
   $(".infrared").show();
-  $(".g-aiImg").attr({"src": "main.png", "data-magnify-src": "main.png" });
+  $(".g-aiImg").attr({"src": "img/main.jpg", "data-magnify-src": "img/main-big.jpg" });
   $(".zoom").magnify();
 })
 
 $(".infrared").click(function(){
   $(this).hide();
   $(".natural").show();
-  $(".g-aiImg").attr({"src": "main-soil.png", "data-magnify-src": "main-soil.png" });
+  $(".g-aiImg").attr({"src": "img/soil.jpg", "data-magnify-src": "img/soil-big.jpg" });
   $(".zoom").magnify();
 })
 </script>
