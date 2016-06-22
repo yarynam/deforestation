@@ -160,6 +160,7 @@ p {
 .logo {
   position: fixed;
   float: left;
+  width:60%;
   margin: 15px 0px 0px 0px; }
 
 .social-icons {

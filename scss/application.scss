@@ -40,7 +40,7 @@ h1 {
     margin-left: 30px;
   }
   @media #{$brk-narrow} {
-    font-size: 2.7em;
+    font-size: 2.3em;
     margin-left: 10px;
   }
 
@@ -51,7 +51,8 @@ h3 {
   margin-left: 120px;
   font-size: 2.3em;
   @media #{$brk-tab} {
-    font-size: 2em;
+    font-size: 1.7em;
+    line-height: 1.9em;
     margin-left: 30px;
   }
   @media #{$brk-narrow} {
@@ -85,8 +86,29 @@ h3 {
     width:70%;
     margin-left: 10px;
   }
-
 }
+
+.intro-ba {
+  display: none;
+  white-space: normal;
+  @include text(1.5em, 1.5em, normal, $white);
+  margin-left: 10px;
+  margin-top: 7em;
+  @media #{$brk-narrow} {
+  display: none;
+  }
+}
+
+.intro-ba-mobile {
+  display: none;
+  white-space: normal;
+  @include text(1.2em, 1.3em, normal, $white);
+  margin-left: 10px;
+  margin-top: 5em;
+}
+
+
+
 
 .small-btn {
   margin-top: 7em;
@@ -96,8 +118,10 @@ h3 {
 }
 
 .small-btn-name {
-  float:right;
-  margin-right: 15px;
+  z-index: 10000;
+  float: left;
+  margin-top: 10px;
+  margin-left: 15px;
   opacity: 0.7;
   @include text(1.5em, 1.5em, normal, $main-text);
   & span {
@@ -124,10 +148,10 @@ h3 {
 }
 
 .test {
-  display: fixed;
-  width: 70%;
-  float: right;
-  margin-top: 2em
+  position: absolute;
+  margin-right: 1em;
+  margin-top: 7em;
+  z-index: 10000;
 
 }
 
