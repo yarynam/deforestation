@@ -92,13 +92,17 @@ p {
 }
 
 .credits {
-  margin-top: 3em;
-  font-size: 1em;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  margin-left: 120px;
+  color: $white;
   & span {
     font-weight: bold;
   }
   @media #{$brk-narrow} {
-    margin-top: 2em;
+    margin-top: -1.5em;
+    margin-left: 10px;
+    font-size: 0.9em;
   }
 }
 
