@@ -452,9 +452,24 @@ h3 {
   line-height: 0.5em;
   font-weight: normal;
   color: #fff;
-  opacity: 0.6; }
+  opacity: 0.8; }
   @media (max-width: 768px) {
     #g-main-2015_svg-Artboard_1 .geoname {
+      font-size: 0.9em;
+      line-height: 1.2em;
+      font-weight: normal;
+      color: #fff;
+      opacity: 0.4; } }
+
+#g-main-2015_svg-Artboard_1 .mountain-name {
+  font-size: 1.3em;
+  line-height: 0.5em;
+  font-weight: normal;
+  color: #fff;
+  font-style: italic;
+  opacity: 0.6; }
+  @media (max-width: 768px) {
+    #g-main-2015_svg-Artboard_1 .mountain-name {
       font-size: 0.9em;
       line-height: 1.2em;
       font-weight: normal;

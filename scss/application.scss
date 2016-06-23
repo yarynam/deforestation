@@ -221,6 +221,17 @@ overflow: hidden;
 
 #g-main-2015_svg-Artboard_1 .geoname {
   @include text(1.3em, 0.5em, normal, $white);
+  opacity: 0.8;
+  @media #{$brk-narrow} {
+   @include text(0.9em, 1.2em, normal, $white);
+   opacity: 0.4;
+  }
+}
+
+
+#g-main-2015_svg-Artboard_1 .mountain-name {
+  @include text(1.3em, 0.5em, normal, $white);
+  font-style: italic;
   opacity: 0.6;
   @media #{$brk-narrow} {
    @include text(0.9em, 1.2em, normal, $white);
