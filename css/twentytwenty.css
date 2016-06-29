@@ -42,16 +42,17 @@
   letter-spacing: 0.1em; }
 
 .twentytwenty-before-label:before, .twentytwenty-after-label:before {
-  position: absolute;
+  position: fixed;
   background: rgba(255, 255, 255, 0.2);
   line-height: 38px;
-  padding: 0 20px;
+  padding: 0 10px;
+  top: 15em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
-  top: 10%;
+  top: 45%;
   margin-top: -19px; }
 
 .twentytwenty-vertical .twentytwenty-before-label:before, .twentytwenty-vertical .twentytwenty-after-label:before {
