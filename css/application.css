@@ -351,7 +351,7 @@ h3 {
   .small-btn-name span {
     padding: 0.5em;
     color: #fff;
-    background: #F75757; }
+    background: #cdcdcd; }
   .small-btn-name:hover {
     opacity: 1; }
   @media (max-width: 768px) {
@@ -484,5 +484,12 @@ h3 {
   @media (max-width: 768px) {
     .methods {
       display: none; } }
+
+.btn-methods {
+  margin-bottom: 3em;
+  margin-top: -3em;
+  margin-left: 3%;
+  z-index: 100000000;
+  position: absolute; }
 
 /*# sourceMappingURL=application.css.map */

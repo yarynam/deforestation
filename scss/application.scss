@@ -123,7 +123,7 @@ h3 {
   opacity: 0.7;
   @include text(1.5em, 1.5em, normal, $main-text);
   & span {
-    @include highlited(0.5em, $white, #F75757);
+    @include highlited(0.5em, $white, #cdcdcd);
   }
   &:hover {
     opacity: 1;
@@ -244,4 +244,12 @@ overflow: hidden;
   @media #{$brk-narrow} {
    display: none;
   }
+}
+
+.btn-methods{
+  margin-bottom: 3em;
+  margin-top: -3em;
+  margin-left: 3%;
+  z-index: 100000000;
+  position: absolute;
 }
