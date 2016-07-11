@@ -278,3 +278,7 @@ overflow: hidden;
     @include highlited(0.3em, $white, #F98585);
   }
 }
+
+.italic {
+  font-style: italic;
+}
