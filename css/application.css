@@ -508,6 +508,13 @@ h3 {
   margin-left: 1%;
   z-index: 100000000;
   position: absolute; }
+  @media (max-width: 768px) {
+    .btn-methods {
+      position: relative;
+      display: block;
+      margin-bottom: 0.2em;
+      margin-top: 0em;
+      margin-left: 50%; } }
 
 .method-subtitle {
   text-align: center;
@@ -523,17 +530,5 @@ h3 {
 
 .italic {
   font-style: italic; }
-
-@media (max-width: 768px) {
-  .zoom {
-    display: none; } }
-
-.mob-zoom {
-  display: none; }
-  @media (max-width: 768px) {
-    .mob-zoom {
-      display: block;
-      width: auto;
-      height: auto; } }
 
 /*# sourceMappingURL=application.css.map */
