@@ -269,10 +269,6 @@ overflow: hidden;
   z-index: 100000000;
   position: absolute;
   @media #{$brk-narrow} {
-   position: relative;
-   display: block;
-   margin-bottom: 0.2em;
-   margin-top: 0em;
    margin-left: 50%;
 }
 }
@@ -288,4 +284,23 @@ overflow: hidden;
 
 .italic {
   font-style: italic;
+}
+
+button {
+  background-color: #F75757;
+  border-style: none;
+  border-width: 0px;
+  padding:0px;
+  border-image-width: 0;
+  border-image-outset: 0;
+}
+
+
+button:focus, button:active:focus {
+    outline: 0 none;
+}
+
+button:active, button.active {
+    box-shadow: none;
+    border: none;
 }
