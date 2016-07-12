@@ -137,7 +137,7 @@ h3 {
   margin-top: 10px;
   margin-left: 15px;
   opacity: 0.7;
-  @include text(1.5em, 1.5em, normal, $main-text);
+  @include text(1.5em, 1.5em, normal, $white);
   & span {
     @include highlited(0.5em, $white, #F75757);
   }
@@ -289,8 +289,11 @@ overflow: hidden;
 button {
   background-color: #F75757;
   border-style: none;
+  top:-2em;
+  position: absolute;
   border-width: 0px;
-  padding:0px;
+  padding:0.5em;
+  color: $white;
   border-image-width: 0;
   border-image-outset: 0;
 }
