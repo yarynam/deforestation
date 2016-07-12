@@ -282,3 +282,18 @@ overflow: hidden;
 .italic {
   font-style: italic;
 }
+
+.zoom {
+  @media #{$brk-narrow} {
+   display:none;
+  }
+}
+
+.mob-zoom {
+  display: none;
+  @media #{$brk-narrow} {
+   display:block;
+   width: auto;
+   height: auto;
+  }
+}

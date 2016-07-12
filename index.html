@@ -464,24 +464,25 @@ $( window ).scroll(function() {
 
 console.log(window.innerWidth);
 $(document).ready(function() {
-  $('.zoom').magnify();
 
-  if(window.innerWidth < 980){
+  if(window.innerWidth < 480){
     $(".mob-left").offset({ left: 150 });
     $(".mob-left2").offset({ left: 120 });
     $(".mob-left3").offset({ left: 10 });
-    var $magnify = $('.magnify');
-    $magnify.off();
+    $(".g-aiImg").removeClass("zoom");
   }
+    $('.zoom').magnify();
 });
 
 $( window ).resize(function() {
-  $('.zoom').magnify();
   if(window.innerWidth < 768){
     $(".mob-left").offset({ left: 150 });
     $(".mob-left2").offset({ left: 120 });
     $(".mob-left3").offset({ left: 10 });
+  } else {
+    $(".g-aiImg").addClass("zoom");
   }
+    $('.zoom').magnify();
 });
 
 var waypoint1 = new Waypoint({

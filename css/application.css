@@ -524,4 +524,16 @@ h3 {
 .italic {
   font-style: italic; }
 
+@media (max-width: 768px) {
+  .zoom {
+    display: none; } }
+
+.mob-zoom {
+  display: none; }
+  @media (max-width: 768px) {
+    .mob-zoom {
+      display: block;
+      width: auto;
+      height: auto; } }
+
 /*# sourceMappingURL=application.css.map */
