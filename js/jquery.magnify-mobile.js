@@ -24,10 +24,10 @@
     '}' +
     '.magnify-mobile>.close {' +
       'position:fixed;' +
-      'top:10px;' +
-      'right:10px;' +
-      'width:32px;' +
-      'height:32px;' +
+      'top:70px;' +
+      'right:50px;' +
+      'width:52px;' +
+      'height:52px;' +
       'background:#333;' +
       'border-radius:16px;' +
       'color:#fff;' +
