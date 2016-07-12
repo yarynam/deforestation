@@ -269,7 +269,7 @@ overflow: hidden;
   z-index: 100000000;
   position: absolute;
   @media #{$brk-narrow} {
-   margin-left: 55%;
+   margin-left: 50%;
 }
 }
 
@@ -289,8 +289,6 @@ overflow: hidden;
 button {
   background-color: #F75757;
   border-style: none;
-  top:-2em;
-  position: absolute;
   border-width: 0px;
   padding:0.5em;
   color: $white;
