@@ -24,8 +24,8 @@
     '}' +
     '.magnify-mobile>.close {' +
       'position:fixed;' +
-      'top:370px;' +
-      'right:50px;' +
+      'top:550px;' +
+      'right:120px;' +
       'width:52px;' +
       'height:52px;' +
       'background:#333;' +
