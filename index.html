@@ -462,7 +462,7 @@ $( window ).scroll(function() {
    }
 });
 
-console.log(window.innerWidth);
+
 $(document).ready(function() {
 
   if(window.innerWidth < 480){
@@ -543,6 +543,7 @@ var waypoint7 = new Waypoint({
 })
 
 $(".area-view").click(function() {
+ $(".twentytwenty-container").height(1000) ;
   $(this).hide();
   $(".ba-view").show();
   $(".test").hide();
@@ -558,6 +559,7 @@ $(".area-view").click(function() {
   $(".intro-mobile").hide();
   $(".main-container").hide();
 	$("#before-after").show();
+  $(".btn-methods").hide();
   $("#before-after").twentytwenty();
   $(".natural").hide();
   $(".infrared").hide();
@@ -574,6 +576,7 @@ $(".ba-view").click(function() {
   $(".credits").show();
   $(".area-view").show();
   $("#before-after").hide();
+  $(".btn-methods").show();
   $(".main-container").show();
   if ($( window ).width() < 768 ) {
     $(".intro-mobile").show();
