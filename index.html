@@ -145,8 +145,10 @@
 		</style>
 
 		<div id='before-after' class='twentytwenty-container container-fluid'>
-    	<img src='img/ba-2000-4.jpg'>
-  		<img src='img/ba-2015-4.jpg'>
+      <div class="test-div">
+    	<img src='img/ba-2000-4.jpg' class="ba-img img-responsive">
+  		<img src='img/ba-2015-4.jpg' class="ba-img img-responsive">
+    </div>
 		</div>
 
 		<div class="main-container container-fluid">
@@ -543,7 +545,9 @@ var waypoint7 = new Waypoint({
 })
 
 $(".area-view").click(function() {
- $(".twentytwenty-container").height(200) ;
+
+  // console.log( $(".test-div").height() );
+ $(".twentytwenty-container").height(500) ;
   $(this).hide();
   $(".ba-view").show();
   $(".test").hide();
