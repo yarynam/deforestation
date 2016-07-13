@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="Custom url" />
     <meta name="twitter:title" content="Зниклий ліс"/>
     <meta name="twitter:description" content="Скільки лісу вирубують у Карпатах?"/>
-    <meta name="twitter:image:src" content="Custom img"/>
+    <meta name="twitter:image:src" content="img/deforestation.jpg"/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
 
@@ -319,8 +319,8 @@
 		</div>
 	</div>
 </div>
-<button id="demo2" class="small-btn-name btn-methods" data-toggle="collapse" href="#demo" data-target="#demo">Як ми рахували вирубки?</button>
-<div id="demo" class="collapse">
+<button id="method-trigger" class="small-btn-name btn-methods" data-toggle="collapse" href="#method-explanation" data-target="#method-explanation">Як ми рахували вирубки?</button>
+<div id="method-explanation" class="collapse">
   <div class="row">
   	<div class="col-lg-6 col-lg-offset-3 col-md-12 col-sm-12  col-xs-12">
   		<h2>Як ми рахували вирубки?</h2>
@@ -511,10 +511,12 @@ var waypoint7 = new Waypoint({
 })
 
 $(".area-view").click(function() {
-  $("#demo2").trigger('click');
+  if ( $( "#method-explanation" ).is( ".in" ) ) {
+    $("#method-trigger").trigger('click');
+  }
   $(this).hide();
   $(".ba-view, #before-after").show();
-  $(".test, h1, h3, .credits, .intro, .main-container, .btn-methods, .natural, .infrared").hide();
+  $(".test, h1, h3, .credits, .intro, .intro-mobile, .main-container, .btn-methods, .natural, .infrared").hide();
   if ($( window ).width() < 768 ) {
     $(".intro-ba-mobile").show();
   } else {
