@@ -232,14 +232,36 @@ p {
   color: #FAA61A; }
 
 /*Include table styles or other if needed*/
-.svg-container {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: auto;
-  vertical-align: middle;
-  overflow: hidden; }
+/*aitohtml rules*/
+.g-artboard {
+  margin: 0 auto; }
 
+#g-main-2015_svg-Artboard_1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+
+.g-aiAbs {
+  position: absolute; }
+
+.g-aiImg {
+  display: block;
+  width: 100% !important; }
+
+#g-main-2015_svg-Artboard_1 p {
+  font-family: nyt-franklin,arial,helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0; }
+
+.g-aiPtransformed p {
+  white-space: nowrap; }
+
+.container {
+  width: auto;
+  z-index: -800; }
+
+/*end*/
 .logo {
   z-index: 10000; }
 

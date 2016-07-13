@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="ТЕКСТИ.ORG.UA"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Зниклий ліс"/>
-    <meta property="og:image" content="Custom img"/>
+    <meta property="og:image" content="img/deforestation.jpg"/>
     <meta property="og:description" content="Скільки лісу вирубують у Карпатах?"/>
     <meta property="og:url" content="Custom url"/>
 
@@ -108,41 +108,9 @@
 
 
 <div id='g-main-2015_svg-box' class='ai2html'>
-	<style type='text/css' media='screen,print'>
-		.g-artboard {
-			margin:0 auto;
-		}
-	</style>
-
 
 	<!-- Artboard: Artboard_1 -->
 	<div id='g-main-2015_svg-Artboard_1' class='g-artboard g-artboard-v3 ' data-min-width='2699'>
-		<style type='text/css' media='screen,print'>
-			#g-main-2015_svg-Artboard_1{
-				position:relative;
-				overflow:hidden;
-				width:100%;
-			}
-			.g-aiAbs{
-				position:absolute;
-			}
-			.g-aiImg{
-				display:block;
-				width:100% !important;
-			}
-			#g-main-2015_svg-Artboard_1 p {
-				font-family:nyt-franklin,arial,helvetica,sans-serif;
-				font-size:13px;
-				line-height:18px;
-				margin:0;
-			}
-
-			.g-aiPtransformed p { white-space: nowrap; }
-			.container{
-				width: auto;
-				z-index: -800;
-			}
-		</style>
 
 		<div id='before-after' class='twentytwenty-container container-fluid'>
       <div class="test-div">
@@ -351,7 +319,7 @@
 		</div>
 	</div>
 </div>
-<button class="small-btn-name btn-methods" data-toggle="collapse" href="#demo" data-target="#demo">Як ми рахували вирубки?</button>
+<button id="demo2" class="small-btn-name btn-methods" data-toggle="collapse" href="#demo" data-target="#demo">Як ми рахували вирубки?</button>
 <div id="demo" class="collapse">
   <div class="row">
   	<div class="col-lg-6 col-lg-offset-3 col-md-12 col-sm-12  col-xs-12">
@@ -446,8 +414,6 @@
 <script>
 
 var pictureHeight = $(".main-container").height() - 20 ;
-
-
 $(window).scroll(function() {
     if ($(window).scrollTop() > pictureHeight) {
         $(".main-btns").hide();
@@ -545,43 +511,24 @@ var waypoint7 = new Waypoint({
 })
 
 $(".area-view").click(function() {
-
-  // console.log( $(".test-div").height() );
- $(".twentytwenty-container").height(500) ;
+  $("#demo2").trigger('click');
   $(this).hide();
-  $(".ba-view").show();
-  $(".test").hide();
-  $("h1").hide();
-  $("h3").hide();
-  $(".credits").hide();
+  $(".ba-view, #before-after").show();
+  $(".test, h1, h3, .credits, .intro, .main-container, .btn-methods, .natural, .infrared").hide();
   if ($( window ).width() < 768 ) {
     $(".intro-ba-mobile").show();
   } else {
     $(".intro-ba").show();
   }
-  $(".intro").hide();
-  $(".intro-mobile").hide();
-  $(".main-container").hide();
-	$("#before-after").show();
-  $(".btn-methods").hide();
   $("#before-after").twentytwenty();
-  $(".natural").hide();
-  $(".infrared").hide();
+
 });
 
 
 $(".ba-view").click(function() {
   $(this).hide();
-  $(".test").show();
-  $(".intro-ba").hide();
-  $(".intro-ba-mobile").hide();
-  $("h1").show();
-  $("h3").show();
-  $(".credits").show();
-  $(".area-view").show();
-  $("#before-after").hide();
-  $(".btn-methods").show();
-  $(".main-container").show();
+  $(".intro-ba, .intro-ba-mobile, #before-after ").hide();
+  $(".test, h1, h3, .credits, .area-view, .btn-methods, .main-container").show();
   if ($( window ).width() < 768 ) {
     $(".intro-mobile").show();
   } else {
