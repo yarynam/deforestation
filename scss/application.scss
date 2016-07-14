@@ -60,6 +60,7 @@ h1 {
     margin-left: 30px;
   }
   @media #{$brk-narrow} {
+    margin-bottom: 0.4em;
     font-size: 2.3em;
     margin-left: 10px;
   }
@@ -256,7 +257,7 @@ overflow: hidden;
 }
 
 #g-main-2015_svg-Artboard_1 .geoname {
-  @include text(1.3em, 0.5em, normal, $white);
+  @include text(1.3em, 1.5em, normal, $white);
   opacity: 0.8;
   @media #{$brk-narrow} {
    @include text(0.9em, 1.2em, normal, $white);
@@ -324,4 +325,37 @@ button:focus, button:active:focus {
 button:active, button.active {
     box-shadow: none;
     border: none;
+
+
+@-webkit-keyframes color_change {
+		  from { opacity: 1; }
+		  to { opacity: 0.2; }
+		}
+		@-moz-keyframes color_change {
+		  from { opacity: 1;}
+		  to { opacity: 0.2; }
+		}
+		@-ms-keyframes color_change {
+		  from { opacity: 1; }
+		  to { opacity: 0.2; }
+		}
+		@-o-keyframes color_change {
+		  from { opacity: 1; }
+		  to { opacity: 0.2; }
+		}
+		@keyframes color_change {
+		  from { opacity: 1;}
+		  to { opacity: 0.2; }
+		}
+}
+
+.hint {
+  background: none;
+  color: $white;
+  text-align: center;
+  -webkit-animation: color_change 1s infinite alternate;
+  -moz-animation: color_change 1s infinite alternate;
+  -ms-animation: color_change 1s infinite alternate;
+  -o-animation: color_change 1s infinite alternate;
+  animation: color_change 1s infinite alternate;
 }
